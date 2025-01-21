@@ -6,7 +6,7 @@
 /*   By: abjellal <abjellal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/19 09:34:15 by abjellal          #+#    #+#             */
-/*   Updated: 2025/01/19 09:56:11 by abjellal         ###   ########.fr       */
+/*   Updated: 2025/01/21 15:45:12 by abjellal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,6 @@
 
 int rb(t_list ** stack_b)
 {
-    
+    rotate(stack_b);
+    ft_putstr("rb\n");
 }

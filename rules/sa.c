@@ -6,7 +6,7 @@
 /*   By: abjellal <abjellal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/19 09:34:32 by abjellal          #+#    #+#             */
-/*   Updated: 2025/01/19 09:52:02 by abjellal         ###   ########.fr       */
+/*   Updated: 2025/01/21 15:40:48 by abjellal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,6 @@
 
 int sa(t_list **stack_a)
 {
-    
+    swap(stack_a);
+    ft_putstr("sa/n");
 }

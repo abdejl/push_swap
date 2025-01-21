@@ -6,7 +6,7 @@
 /*   By: abjellal <abjellal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/19 09:33:45 by abjellal          #+#    #+#             */
-/*   Updated: 2025/01/19 10:16:55 by abjellal         ###   ########.fr       */
+/*   Updated: 2025/01/21 15:44:07 by abjellal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,9 @@ int rrb(t_list **stack_b);
 int rrr(t_list **stack_a, t_list ** stack_b);
 int sa(t_list **stack_a);
 int sb(t_list **stack_b);
-int ss(t_list **stack_a, t_list **stack_b)
+int ss(t_list **stack_a, t_list **stack_b);
+void swap(t_list **stack);
+void ft_putstr(char *str);
+void rotate(t_list **stack);
 
 #endif

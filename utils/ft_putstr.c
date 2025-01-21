@@ -1,19 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sb.c                                               :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abjellal <abjellal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/19 10:06:14 by abjellal          #+#    #+#             */
-/*   Updated: 2025/01/21 15:42:17 by abjellal         ###   ########.fr       */
+/*   Created: 2025/01/21 15:36:59 by abjellal          #+#    #+#             */
+/*   Updated: 2025/01/21 15:40:01 by abjellal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int sb(t_list **stack_b)
+void ft_putstr(char *str)
 {
-    swap(stack_b);
-    ft_putstr("sb\n");
+    int i;
+
+    i = 0;
+    while (str[i])
+    {
+        write(1, &str[i], 1);
+        i++;
+    }
 }

@@ -1,19 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sb.c                                               :+:      :+:    :+:   */
+/*   swap.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abjellal <abjellal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/19 10:06:14 by abjellal          #+#    #+#             */
-/*   Updated: 2025/01/21 15:42:17 by abjellal         ###   ########.fr       */
+/*   Created: 2025/01/21 15:28:50 by abjellal          #+#    #+#             */
+/*   Updated: 2025/01/21 15:34:15 by abjellal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int sb(t_list **stack_b)
+void swap(t_list **stack)
 {
-    swap(stack_b);
-    ft_putstr("sb\n");
+    if (!stack || !(*stack) || !((*stack)->next))
+        return;
+
+    t_list *first = *stack;
+    t_list *second = first->next;
+    first->next = second->next;
+    second->next = first;
+    *stack = second; 
 }
