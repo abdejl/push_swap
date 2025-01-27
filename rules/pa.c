@@ -6,13 +6,14 @@
 /*   By: abjellal <abjellal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/19 09:33:58 by abjellal          #+#    #+#             */
-/*   Updated: 2025/01/19 10:10:57 by abjellal         ###   ########.fr       */
+/*   Updated: 2025/01/22 23:04:18 by abjellal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int pa(t_list **stack_a, t_list **stack_b)
+int pa(t_list **stack_b, t_list **stack_a)
 {
-    
+    push(stack_b, stack_a);
+    ft_putstr("pa\n");
 }

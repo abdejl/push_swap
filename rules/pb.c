@@ -6,7 +6,7 @@
 /*   By: abjellal <abjellal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/19 09:34:05 by abjellal          #+#    #+#             */
-/*   Updated: 2025/01/19 10:12:07 by abjellal         ###   ########.fr       */
+/*   Updated: 2025/01/22 23:05:14 by abjellal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,6 @@
 
 int pb(t_list **stack_a, t_list **stack_b)
 {
-    
+    push(stack_a, stack_b);
+    ft_putstr("pb");
 }
