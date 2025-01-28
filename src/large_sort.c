@@ -1,7 +1,7 @@
 #include "push_swap.h"
 
 // Function to perform radix sort (Turk algorithm)
-void sort_large_stack(t_list **stack_a, t_list **stack_b)
+void sort_large_stack(t_node **stack_a, t_node **stack_b)
 {
     int max_bits;
     int i = 0;

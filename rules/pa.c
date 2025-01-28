@@ -12,7 +12,7 @@
 
 #include "push_swap.h"
 
-int pa(t_list **stack_b, t_list **stack_a)
+int pa(t_node **stack_b, t_node **stack_a)
 {
     push(stack_b, stack_a);
     ft_putstr("pa\n");

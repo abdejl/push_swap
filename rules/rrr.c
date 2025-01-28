@@ -12,7 +12,7 @@
 
 #include "push_swap.h"
 
-int rrr(t_list **stack_a, t_list **stack_b)
+int rrr(t_node **stack_a, t_node **stack_b)
 {
     reverse_rotate(stack_a);
     reverse_rotate(stack_b);

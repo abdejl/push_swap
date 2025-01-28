@@ -1,10 +1,10 @@
 #include "push_swap.h"
 
-t_list *create_node(int value)
+t_node *create_node(int value)
 {
-    t_list *new_node;
+    t_node *new_node;
 
-    new_node = (t_list *)malloc(sizeof(t_list));
+    new_node = (t_node *)malloc(sizeof(t_node));
     if (!new_node)
         return (NULL);
     new_node->value = value;
@@ -13,9 +13,9 @@ t_list *create_node(int value)
     return (new_node);
 }
 
-void free_stack(t_list *stack)
+void free_stack(t_node *stack)
 {
-    t_list *temp;
+    t_node *temp;
 
     while (stack)
     {
@@ -42,10 +42,10 @@ int is_valid_number(char *str)
     return (1);
 }
 
-int has_duplicates(t_list *stack)
+int has_duplicates(t_node *stack)
 {
-    t_list *current;
-    t_list *checker;
+    t_node *current;
+    // t_node *checker;
 
     while (stack)
     {
@@ -62,11 +62,11 @@ int has_duplicates(t_list *stack)
 }
 
 
-static int process_argument(char *arg, t_list **stack_a)
+static int process_argument(char *arg, t_node **stack_a)
 {
     char **split_args;
     int value;
-    t_list *new_node;
+    t_node *new_node;
     int i = 0;
 
     split_args = ft_split(arg, ' ');
@@ -87,7 +87,7 @@ static int process_argument(char *arg, t_list **stack_a)
     return (1);
 }
 
-static int validate_stack(t_list *stack_a)
+static int validate_stack(t_node *stack_a)
 {
     if (has_duplicates(stack_a))
     {
@@ -98,9 +98,9 @@ static int validate_stack(t_list *stack_a)
     return (1);
 }
 
-t_list *parse_input(int argc, char **argv)
+t_node *parse_input(int argc, char **argv)
 {
-    t_list *stack_a = NULL;
+    t_node *stack_a = NULL;
     int i = 1;
 
     if (argc < 2)

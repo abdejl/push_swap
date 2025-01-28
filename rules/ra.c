@@ -12,7 +12,7 @@
 
 #include "push_swap.h"
 
-int ra(t_list **stack_a)
+int ra(t_node **stack_a)
 {
     rotate(stack_a);
     ft_putstr("ra/n");

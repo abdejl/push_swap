@@ -1,9 +1,9 @@
 #include "push_swap.h"
 
 // Function to push an element to a sorted stack
-void push_to_sorted_stack(t_list **source_stack, t_list **dest_stack)
+void push_to_sorted_stack(t_node **source_stack, t_node **dest_stack)
 {
-    t_list *temp;
+    t_node *temp;
     
     if (!*source_stack)  // If the source stack is empty, nothing to do
         return;

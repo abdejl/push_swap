@@ -12,7 +12,7 @@
 
 #include "push_swap.h"
 
-int ss(t_list **stack_a, t_list **stack_b)
+int ss(t_node **stack_a, t_node **stack_b)
 {
     swap(stack_a);
     swap(stack_b);

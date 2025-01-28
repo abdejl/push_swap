@@ -12,7 +12,7 @@
 
 #include "push_swap.h"
 
-int pb(t_list **stack_a, t_list **stack_b)
+int pb(t_node **stack_a, t_node **stack_b)
 {
     push(stack_a, stack_b);
     ft_putstr("pb");

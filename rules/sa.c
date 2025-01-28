@@ -12,7 +12,7 @@
 
 #include "push_swap.h"
 
-int sa(t_list **stack_a)
+int sa(t_node **stack_a)
 {
     swap(stack_a);
     ft_putstr("sa/n");

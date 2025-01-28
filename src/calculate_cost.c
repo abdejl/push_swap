@@ -1,10 +1,10 @@
 #include "push_swap.h"
 
 // Function to calculate the "cost" of an operation
-int calculate_cost(t_list *stack_a, t_list *stack_b, int value)
+int calculate_cost(t_node *stack_a, t_node *stack_b, int value)
 {
     int cost = 0;
-    t_list *current = stack_a;
+    t_node *current = stack_a;
 
     // Find the cost for moving the element to the correct position in stack_a
     while (current)

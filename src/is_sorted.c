@@ -1,7 +1,7 @@
 #include "push_swap.h"
 
 // Function to check if a stack is sorted in ascending order
-int is_sorted(t_list *stack)
+int is_sorted(t_node *stack)
 {
     while (stack && stack->next)
     {

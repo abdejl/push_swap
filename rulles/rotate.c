@@ -12,13 +12,13 @@
 
 #include "push_swap.h"
 
-void rotate(t_list **stack)
+void rotate(t_node **stack)
 {
     if (!stack || !(*stack) || !((*stack)->next))
         return; // Do nothing if stack is empty or has only one element
 
-    t_list *first = *stack;
-    t_list *last = *stack;
+    t_node *first = *stack;
+    t_node *last = *stack;
 
     // Find the last node
     while (last->next)

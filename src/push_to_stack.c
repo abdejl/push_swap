@@ -1,9 +1,9 @@
 #include "push_swap.h"
 
 // Function to push an element onto a stack
-void push_to_stack(t_list **stack, int value)
+void push_to_stack(t_node **stack, int value)
 {
-    t_list *new_node;
+    t_node *new_node;
 
     // Create a new node with the given value
     new_node = create_node(value);

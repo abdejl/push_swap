@@ -1,7 +1,7 @@
 #include "push_swap.h"
 
 // Function to sort a small stack (3 to 5 elements)
-void sort_small_stack(t_list **stack_a)
+void sort_small_stack(t_node **stack_a)
 {
     int size = ft_lstsize(*stack_a);  // Get the size of the stack
 
@@ -17,7 +17,7 @@ void sort_small_stack(t_list **stack_a)
 }
 
 // Function to sort 3 elements using insertion sort
-void sort_three(t_list **stack_a)
+void sort_three(t_node **stack_a)
 {
     int first = (*stack_a)->value;
     int second = (*stack_a)->next->value;
@@ -39,7 +39,7 @@ void sort_three(t_list **stack_a)
 }
 
 // Function to sort 4 elements
-void sort_four(t_list **stack_a)
+void sort_four(t_node **stack_a, t_node **stack_b)
 {
     // Push the smallest element to stack B
     pb(stack_a, &stack_b);
@@ -48,7 +48,7 @@ void sort_four(t_list **stack_a)
 }
 
 // Function to sort 5 elements
-void sort_five(t_list **stack_a)
+void sort_five(t_node **stack_a, t_node **stack_b)
 {
     // Push the two smallest elements to stack B
     pb(stack_a, &stack_b);

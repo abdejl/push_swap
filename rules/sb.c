@@ -12,7 +12,7 @@
 
 #include "push_swap.h"
 
-int sb(t_list **stack_b)
+int sb(t_node **stack_b)
 {
     swap(stack_b);
     ft_putstr("sb\n");

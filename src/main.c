@@ -4,7 +4,7 @@
 *   Checks if a stack is sorted.
 *   Returns 0 if the stack is not sorted, 1 if it is sorted.
 */
-int is_sorted(t_list *stack)
+int is_sorted(t_node *stack)
 {
     while (stack && stack->next)
     {
@@ -18,7 +18,7 @@ int is_sorted(t_list *stack)
 /* push_swap:
 *   Chooses a sorting method depending on the number of values to be sorted.
 */
-static void push_swap(t_list **stack_a, t_list **stack_b, int stack_size)
+static void push_swap(t_node **stack_a, t_node **stack_b, int stack_size)
 {
     if (stack_size == 2 && !is_sorted(*stack_a))
         sa(stack_a);  // If there are 2 elements and it's not sorted, swap
@@ -35,8 +35,8 @@ static void push_swap(t_list **stack_a, t_list **stack_b, int stack_size)
 */
 int main(int argc, char **argv)
 {
-    t_list *stack_a;
-    t_list *stack_b;
+    t_node *stack_a;
+    t_node *stack_b;
     int stack_size;
 
     if (argc < 2)

@@ -1,7 +1,7 @@
 #include "push_swap.h"
 
 // Function to find the maximum value in a stack
-int find_max(t_list *stack)
+int find_max(t_node *stack)
 {
     int max_value;
 

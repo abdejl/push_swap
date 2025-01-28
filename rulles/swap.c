@@ -12,13 +12,13 @@
 
 #include "push_swap.h"
 
-void swap(t_list **stack)
+void swap(t_node **stack)
 {
     if (!stack || !(*stack) || !((*stack)->next))
         return;
 
-    t_list *first = *stack;
-    t_list *second = first->next;
+    t_node *first = *stack;
+    t_node *second = first->next;
     first->next = second->next;
     second->next = first;
     *stack = second; 

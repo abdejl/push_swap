@@ -1,7 +1,7 @@
 #include "push_swap.h"
 
 // Function to print the elements of a stack (for debugging purposes)
-void print_stack(t_list *stack)
+void print_stack(t_node *stack)
 {
     while (stack)
     {

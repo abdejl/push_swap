@@ -1,7 +1,7 @@
 #include "push_swap.h"
 
 // Function to find the minimum value in a stack
-int find_min(t_list *stack)
+int find_min(t_node *stack)
 {
     int min_value;
     

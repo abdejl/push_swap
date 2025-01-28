@@ -12,13 +12,13 @@
 
 #include "push_swap.h"
 
-void reverse_rotate(t_list **stack)
+void reverse_rotate(t_node **stack)
 {
     if (!stack || !(*stack) || !((*stack)->next))
         return; // Do nothing if stack is empty or has only one element
 
-    t_list *prev = NULL;
-    t_list *last = *stack;
+    t_node *prev = NULL;
+    t_node *last = *stack;
 
     // Traverse to the last node while keeping track of the previous node
     while (last->next)

@@ -1,9 +1,9 @@
 #include "push_swap.h"
 
 // Function to pop an element from the stack
-int pop_from_stack(t_list **stack)
+int pop_from_stack(t_node **stack)
 {
-    t_list *temp;
+    t_node *temp;
     int value;
 
     if (!*stack)
