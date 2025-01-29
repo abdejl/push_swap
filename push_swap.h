@@ -22,7 +22,7 @@ typedef struct s_node
 # include <stdio.h>
 
 void print_stack(t_node *stack);
-int calculate_cost(tt_node *stack_a, t_node *stack_b, int value);
+int calculate_cost(t_node *stack_a, t_node *stack_b, int value);
 int get_target_position(t_node *stack, int value);
 
 // Stack Operations

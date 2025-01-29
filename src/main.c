@@ -23,7 +23,7 @@ static void push_swap(t_node **stack_a, t_node **stack_b, int stack_size)
     if (stack_size == 2 && !is_sorted(*stack_a))
         sa(stack_a);  // If there are 2 elements and it's not sorted, swap
     else if (stack_size == 3)
-        sort_small_stack(stack_a);  // For 3 elements, use small stack sort
+        sort_small_stack(stack_a, stack_b);  // For 3 elements, use small stack sort
     else if (stack_size > 3 && !is_sorted(*stack_a))
         sort_large_stack(stack_a, stack_b);  // For larger stacks, use efficient sort
 }

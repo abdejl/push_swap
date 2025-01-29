@@ -1,7 +1,7 @@
 #include "push_swap.h"
 
 // Function to sort a small stack (3 to 5 elements)
-void sort_small_stack(t_node **stack_a)
+void sort_small_stack(t_node **stack_a, t_node **stack_b)
 {
     int size = ft_lstsize(*stack_a);  // Get the size of the stack
 
@@ -11,9 +11,9 @@ void sort_small_stack(t_node **stack_a)
     else if (size == 3)
         sort_three(stack_a);  // Handle sorting for 3 elements
     else if (size == 4)
-        sort_four(stack_a);  // Handle sorting for 4 elements
+        sort_four(stack_a, stack_b);  // Handle sorting for 4 elements
     else if (size == 5)
-        sort_five(stack_a);  // Handle sorting for 5 elements
+        sort_five(stack_a, stack_b);  // Handle sorting for 5 elements
 }
 
 // Function to sort 3 elements using insertion sort
@@ -42,18 +42,18 @@ void sort_three(t_node **stack_a)
 void sort_four(t_node **stack_a, t_node **stack_b)
 {
     // Push the smallest element to stack B
-    pb(stack_a, &stack_b);
+    pb(stack_a, stack_b);
     sort_three(stack_a);  // Sort the remaining 3 elements in stack A
-    pa(stack_a, &stack_b);  // Push the smallest element back to stack A
+    pa(stack_a, stack_b);  // Push the smallest element back to stack A
 }
 
 // Function to sort 5 elements
 void sort_five(t_node **stack_a, t_node **stack_b)
 {
     // Push the two smallest elements to stack B
-    pb(stack_a, &stack_b);
-    pb(stack_a, &stack_b);
+    pb(stack_a, stack_b);
+    pb(stack_a, stack_b);
     sort_three(stack_a);  // Sort the remaining 3 elements in stack A
-    pa(stack_a, &stack_b);  // Push the smallest element back to stack A
-    pa(stack_a, &stack_b);  // Push the second smallest element back to stack A
+    pa(stack_a, stack_b);  // Push the smallest element back to stack A
+    pa(stack_a, stack_b);  // Push the second smallest element back to stack A
 }

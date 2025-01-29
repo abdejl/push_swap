@@ -56,8 +56,13 @@ void push(t_node **dest, t_node **src);
 void reverse_rotate(t_node **stack);
 
 // Sorting Functions
-void sort_small_stack(t_node **stack_a);
+void sort_small_stack(t_node **stack_a, t_node **stack_b);
 void sort_large_stack(t_node **stack_a, t_node **stack_b);
+void push_to_sorted_stack(t_node **source_stack, t_node **dest_stack);
+void push_to_stack(t_node **stack, int value);
+void sort_three(t_node **stack_a);
+void sort_four(t_node **stack_a, t_node **stack_b);
+void sort_five(t_node **stack_a, t_node **stack_b);
 
 // Utility Functions
 t_node *create_node(int value);
@@ -79,11 +84,5 @@ void ft_putstr(char *str);
 void	ft_lstadd_back(t_node **lst, t_node *new);
 void free_split(char **split);
 void print_stack(t_node *stack);
-void push_to_sorted_stack(t_node **source_stack, t_node **dest_stack);
-void push_to_stack(t_node **stack, int value);
-void sort_small_stack(t_node **stack_a);
-void sort_three(t_node **stack_a);
-void sort_four(t_node **stack_a, t_node **stack_b);
-void sort_five(t_node **stack_a, t_node **stack_b);
 
 #endif

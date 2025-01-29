@@ -19,7 +19,7 @@ void push_to_sorted_stack(t_node **source_stack, t_node **dest_stack)
     }
     else
     {
-        t_list *current = *dest_stack;
+        t_node *current = *dest_stack;
         // Find the correct position to insert the element in the sorted order
         while (current->next && current->next->value < temp->value)
             current = current->next;
