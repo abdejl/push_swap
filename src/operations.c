@@ -3,6 +3,7 @@
 int pa(t_node **stack_b, t_node **stack_a)
 {
     push(stack_b, stack_a);
+    print_stacks(stack_a, stack_b);
     ft_putstr("pa\n");
     return (0);
 }
@@ -10,14 +11,14 @@ int pa(t_node **stack_b, t_node **stack_a)
 int pb(t_node **stack_a, t_node **stack_b)
 {
     push(stack_a, stack_b);
-    ft_putstr("pb");
+    ft_putstr("pb\n");
         return (0);
 }
 
 int ra(t_node **stack_a)
 {
     rotate(stack_a);
-    ft_putstr("ra/n");
+    ft_putstr("ra\n");
         return (0);
 }
 

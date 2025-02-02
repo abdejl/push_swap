@@ -1,22 +1,32 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   find_min_value.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: abjellal <abjellal@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/02 11:20:22 by abjellal          #+#    #+#             */
+/*   Updated: 2025/02/02 11:20:22 by abjellal         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
-// Function to find the minimum value in a stack
 int find_min(t_node *stack)
 {
     int min_value;
     
     if (!stack)
-        return (0); // Return 0 if the stack is empty
+        return (0);
+    min_value = stack->value;
 
-    min_value = stack->value;  // Initialize min_value with the first element
+    stack = stack->next;
 
-    stack = stack->next;  // Move to the next element
-
-    while (stack)  // Traverse the rest of the stack
+    while (stack)
     {
         if (stack->value < min_value)
-            min_value = stack->value;  // Update min_value if a smaller value is found
-        stack = stack->next;  // Move to the next element
+            min_value = stack->value;
+        stack = stack->next;
     }
 
     return min_value;

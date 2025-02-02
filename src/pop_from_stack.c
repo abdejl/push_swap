@@ -1,6 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   pop_from_stack.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: abjellal <abjellal@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/02 11:24:22 by abjellal          #+#    #+#             */
+/*   Updated: 2025/02/02 11:24:22 by abjellal         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
-// Function to pop an element from the stack
 int pop_from_stack(t_node **stack)
 {
     t_node *temp;
@@ -8,20 +19,11 @@ int pop_from_stack(t_node **stack)
 
     if (!*stack)
     {
-        return (0); // Stack is empty, nothing to pop
+        return (0);
     }
-
-    // Store the value of the top node to return it later
     value = (*stack)->value;
-
-    // Temporarily hold the top element (to free later)
     temp = *stack;
-
-    // Move the stack pointer to the next element
     *stack = (*stack)->next;
-
-    // Free the memory of the previous top node
     free(temp);
-
-    return (value); // Return the value of the popped element
+    return (value);
 }

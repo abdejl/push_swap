@@ -25,7 +25,7 @@ int rrr(t_node **stack_a, t_node **stack_b)
 int sa(t_node **stack_a)
 {
     swap(stack_a);
-    ft_putstr("sa/n");
+    ft_putstr("sa\n");
     return (0);
 }
 

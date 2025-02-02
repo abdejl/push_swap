@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   parsing_input.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: abjellal <abjellal@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/02 11:23:52 by abjellal          #+#    #+#             */
+/*   Updated: 2025/02/02 11:23:52 by abjellal         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 t_node *create_node(int value)
@@ -8,7 +20,7 @@ t_node *create_node(int value)
     if (!new_node)
         return (NULL);
     new_node->value = value;
-    new_node->index = -1; // Indexing can be assigned later if needed
+    new_node->index = -1;
     new_node->next = NULL;
     return (new_node);
 }
@@ -45,7 +57,6 @@ int is_valid_number(char *str)
 int has_duplicates(t_node *stack)
 {
     t_node *current;
-    // t_node *checker;
 
     while (stack)
     {
@@ -71,7 +82,7 @@ static int process_argument(char *arg, t_node **stack_a)
 
     split_args = ft_split(arg, ' ');
     if (!split_args)
-        return (0); // Memory allocation failure
+        return (0);
     while (split_args[i])
     {
         if (!is_valid_number(split_args[i]) || ft_strlen(split_args[i]) > 11)

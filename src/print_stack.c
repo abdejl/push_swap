@@ -1,13 +1,24 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   print_stack.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: abjellal <abjellal@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/02 11:25:13 by abjellal          #+#    #+#             */
+/*   Updated: 2025/02/02 11:25:13 by abjellal         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
-// Function to print the elements of a stack (for debugging purposes)
 void print_stack(t_node *stack)
 {
     while (stack)
     {
-        ft_putnbr(stack->value);  // Assuming you have a function to print numbers
-        ft_putstr(" ");  // Print space between numbers
-        stack = stack->next;  // Move to the next element
+        ft_putnbr(stack->value);
+        ft_putstr(" ");
+        stack = stack->next;
     }
-    ft_putstr("\n");  // Print a newline after the stack
+    ft_putstr("\n");
 }

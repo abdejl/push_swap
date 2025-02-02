@@ -1,8 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   empty_stack.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: abjellal <abjellal@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/02 11:18:58 by abjellal          #+#    #+#             */
+/*   Updated: 2025/02/02 11:18:58 by abjellal         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
-// Function to initialize the stacks as empty linked lists
 void init_stack(t_node **stack_a, t_node **stack_b)
 {
-    *stack_a = NULL;  // Initialize stack A as an empty list
-    *stack_b = NULL;  // Initialize stack B as an empty list
+    *stack_a = NULL;
+    *stack_b = NULL;
 }

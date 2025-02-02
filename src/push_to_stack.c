@@ -1,19 +1,27 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   push_to_stack.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: abjellal <abjellal@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/02 11:27:16 by abjellal          #+#    #+#             */
+/*   Updated: 2025/02/02 11:27:16 by abjellal         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
-// Function to push an element onto a stack
 void push_to_stack(t_node **stack, int value)
 {
     t_node *new_node;
 
-    // Create a new node with the given value
     new_node = create_node(value);
     if (!new_node)
     {
-        ft_putstr("Error\n");  // If memory allocation fails, print an error message
+        ft_putstr("Error\n");
         return;
     }
-
-    // Insert the new node at the beginning of the stack (top of the stack)
     new_node->next = *stack;
     *stack = new_node;
 }
