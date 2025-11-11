@@ -127,4 +127,4 @@ To test the program, you need to generate a list of numbers and pipe the output 
 
 ## Author
 
-* **[Your Name]** - [abdejl](https://github.com/abdejl)
+* **abdejl** - [abdejl](https://github.com/abdejl)
