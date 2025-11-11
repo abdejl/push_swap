@@ -1,8 +1,5 @@
 # push_swap (42 School Project)
 
-<p align="center">
-  <img src="https://github.com/42-world/42-badges/blob/main/badges/push_swap_full.png" alt="42 push_swap Project Badge" width="400" />
-</p>
 
 <p align="center">
   <strong>An algorithm-intensive project to sort data with a limited set of operations.</strong>
